@@ -1,75 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise 4</title>
-  <style>
-    .container {
-      display: flex;
-      padding: 32px;
-      gap: 16px;
-      background-color: lightblue;
-      border: 5px solid blue;
-      height: 9rem;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+    <style>
+      .container {
+        display: flex;
+        padding: 32px;
+        gap: 16px;
+        background-color: lightblue;
+        border: 5px solid blue;
+        height: 9rem;
+      }
 
-    .item {
-      background-color: peachpuff;
-      border: 5px solid salmon;
-      flex: 1;
-      padding: 4px;
-    }
+      .item {
+        background-color: peachpuff;
+        border: 5px solid salmon;
+        flex: 1;
+        padding: 4px;
+      }
 
-    .display-flex {
-      display: flex;
-    }
+      .display-flex {
+        display: flex;
+      }
 
-    .item-2 {
-      background-color: pink;
-      border: 5px solid red;
-      flex: 1;
-      padding: 10px;
-    }
+      .item-2 {
+        background-color: pink;
+        border: 5px solid red;
+        flex: 1;
+        padding: 10px;
+      }
 
-    .second-item {
-      padding: 10px;
-    }
+      .second-item {
+        padding: 10px;
+      }
 
-    .primary-container {
-      background-color: rgb(206, 235, 206);
-      border: 5px solid green;
-      padding: 36px;
-    }
+      .primary-container {
+        background-color: rgb(206, 235, 206);
+        border: 5px solid green;
+        padding: 36px;
+      }
 
-    .container-2 {
-      display: flex;
-      gap: 24px;
-    }
+      .container-2 {
+        display: flex;
+        gap: 24px;
+      }
 
-    .item-body {
-      flex: 1;
-      background-color: rgb(227, 168, 178);
-      border: 5px solid rgb(182, 0, 0);
-      margin: 45px 0;
-      height: 20rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="primary-container">
-    <div class="container">
-      <div class="item"></div>
-      <div class="item display-flex second-item">
-        <div class="item-2"></div>
-        <div class="item-2"></div>
+      .item-body {
+        flex: 1;
+        background-color: rgb(227, 168, 178);
+        border: 5px solid rgb(182, 0, 0);
+        margin: 45px 0;
+        height: 20rem;
+      }
+
+      .container-2-1 {
+        display: flex;
+        gap: 24px;
+        flex-direction: column;
+        flex: 1;
+      }
+
+      .item-body-2 {
+        flex: 1;
+        background-color: rgb(227, 168, 178);
+        border: 5px solid rgb(182, 0, 0);
+        margin: 45px 0 0 0;
+      }
+
+      .item-body-3 {
+        flex: 1;
+        background-color: rgb(227, 168, 178);
+        border: 5px solid rgb(182, 0, 0);
+        margin: 0 0 45px;
+      }
+
+      .item-footer {
+        background-color: rgb(231, 206, 248);
+        border: 5px solid rgb(127, 0, 211);
+        flex: 1;
+        padding: 4px;
+      }
+
+      .item-footer-container {
+        flex: 1;
+        gap: 16px;
+      }
+
+      .item-footer-2 {
+        background-color: peachpuff;
+        border: 5px solid salmon;
+        flex: 1;
+        padding: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="primary-container">
+      <div class="container">
+        <div class="item"></div>
+        <div class="item display-flex second-item">
+          <div class="item-2"></div>
+          <div class="item-2"></div>
+        </div>
+        <div class="item"></div>
       </div>
-      <div class="item"></div>
+      <div class="container-2">
+        <div class="item-body"></div>
+        <div class="container-2-1">
+          <div class="item-body-2"></div>
+          <div class="item-body-3"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="item-footer"></div>
+        <div class="display-flex item-footer-container">
+          <div class="item-footer-2"></div>
+          <div class="item-footer-2"></div>
+        </div>
+        <div class="item-footer"></div>
+      </div>
     </div>
-    <div class="container-2">
-      <div class="item-body"></div>
-      <div class="item-body"></div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>
